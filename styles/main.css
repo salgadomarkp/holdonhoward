@@ -3,5 +3,70 @@ html{
 }
 
 body{
+    margin-left:0;
+    margin-right:0;
+    margin-top: 72px;
+    background-color:#888;
     font-family: 'East Sea Dokdo', cursive;
+}
+
+.elevation{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+
+.nav-bar{
+    background-color: black;
+    color: #FFFFFF;
+    position: fixed;
+    top:0;
+    z-index:4;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 72px;
+    font-size: 1.5rem;
+}
+
+.nav-bar__brand{
+    height:72px;
+    display:flex;
+    align-items:center;
+    margin-left:24px;
+    margin-right:auto;
+    font-size: 3rem;
+}
+
+.nav-bar__tools{
+    height:72px;
+    margin-left: auto;
+    margin-right:24px;
+    font-size: 1.75rem;
+    display: flex;
+    align-items: center;
+}
+
+.hero{
+    position:relative;
+    height:500px;
+    width:100%;
+}
+
+.hero__image{
+    height:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+.hero__band-pic{
+    background-image:url("../images/band-pic.jpg");
+}
+
+.content{
+    background-color: #FFF;
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 48px;
 }
