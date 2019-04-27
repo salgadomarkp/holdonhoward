@@ -45,24 +45,6 @@ body{
     align-items: center;
 }
 
-.hero{
-    position:relative;
-    height:500px;
-    width:100%;
-}
-
-.hero__image{
-    height:100%;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-attachment: fixed;
-}
-
-.hero__band-pic{
-    background-image:url("../images/band-pic.jpg");
-}
-
 .content{
     background-color: #FFF;
     max-width: 50rem;
