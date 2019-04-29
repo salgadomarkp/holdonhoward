@@ -45,6 +45,10 @@ body{
     align-items: center;
 }
 
+span{
+    padding: 0px 12px;
+}
+
 .content{
     background-color: #FFF;
     max-width: 50rem;
