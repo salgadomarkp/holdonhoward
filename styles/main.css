@@ -17,9 +17,21 @@ h4{
     letter-spacing: 0.25px;
 }
 
+h5{
+    font-family: 'East SeaDokdo', cursive;
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing: 0;
+}
+
 p{
+    font-family: 'Roboto', sans-serif;
     line-height: 2;
     color: #444;
+}
+
+.tab{
+    text-indent: 48px;
 }
 
 .elevation{
@@ -67,4 +79,22 @@ span{
     margin-left: auto;
     margin-right: auto;
     padding: 48px;
+}
+
+.hero{
+    position:relative;
+    height:600px;
+    width:100%;
+}
+
+.hero__image{
+    height:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+.hero__chalkboard{
+    background-image: url("../images/chalkboard-band-name.jpg");
 }
