@@ -22,6 +22,7 @@ h5{
     font-weight: 400;
     font-size: 1.5rem;
     letter-spacing: 0;
+    text-indent: 24px;
 }
 
 p{
@@ -69,6 +70,37 @@ p{
     align-items: center;
 }
 
+.nav-bar__dropdown{
+    position: relative;
+}
+
+.dropdown__button{
+    background-color: black;
+    padding: 0 48px;
+    color: white;
+    min-height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdown__button:hover{
+    background-color: #444;
+}
+
+.dropdown__list{
+    background-color: #444;
+    position: absolute;
+    width: 100%;
+    max-height: 320px;
+    overflow-y: hidden;
+}
+
+.dropdown__list.hidden{
+    max-height: 0;
+}
+
 span{
     padding: 0px 12px;
 }
@@ -97,4 +129,9 @@ span{
 
 .hero__chalkboard{
     background-image: url("../images/chalkboard-band-name.jpg");
+}
+
+.transition{
+    transition: all 1000ms;
+    -webkit-transform: all 1000ms;
 }
