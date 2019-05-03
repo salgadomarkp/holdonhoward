@@ -5,6 +5,7 @@
         <link href="styles/main.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="description" content="The website for the Lehigh Valley-based pop punk band Hold on Howard">
         <meta name="keywords" content="music,band,punk,poppunk">
         <script
@@ -89,10 +90,22 @@
             <h4>Media</h4>
 
             <h5>Photos</h5>
-            <img src="images/band-pic-smaller.jpg">
-            <img src="images/chalkboard-band-name.jpg">
-            <img src="images/relay-pic.PNG">
-            <img src="images/wfmz-relay-pic.jpg">
+            <div id="dialog" class="transition-opacity hidden">
+                <div class="dialog__scrim"></div>
+                <div class="dialog__image">
+                    <img class="image__display" src="images/band-pic-smaller.jpg">
+                </div>
+                <div class="dialog__exit">
+                    
+                </div>
+                <div class="dialog__scroll-left">
+                    &lt;
+                </div>
+                <div class="dialog__scroll-right">
+                    &gt;
+                </div>
+            </div>
+            <div id="gallery"></div>
             <h5>Videos</h5>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Hs1zQrfuYEc" 
                 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
@@ -124,6 +137,15 @@
             </p>
             
             <h4>Contact Us</h4>
+            <p>
+                We can be reached by email at
+                HoldOnHoward@gmail.com. Be sure to like,
+                follow, and subscribe to us on social
+                media to stay updated with the latest
+                news and information.
+            </p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
 
         </div>
 

@@ -135,7 +135,140 @@ span{
     background-image: url("../images/chalkboard-band-name.jpg");
 }
 
+#dialog{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 6;
+    top: 0;
+}
+
+#dialog.hidden{
+    width: 0;
+    opacity: 0;
+}
+
+#gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dialog__scrim{
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.dialog__image{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    z-index:7;
+}
+
+.dialog__exit{
+    position: absolute;
+    z-index: 7;
+    color: white;
+    border-color: white;
+    border: solid;
+    cursor: pointer;
+    right: 24px;
+    top: 24px;
+    padding: 12px;
+}
+
+.dialog__scroll-left{
+    position:absolute;
+    z-index: 7;
+    left:24px;
+    top:50%;
+    color:white;
+    font-size:3rem;
+    cursor:pointer;
+}
+
+.dialog__scroll-right{
+    position:absolute;
+    z-index: 7;
+    right:24px;
+    top:50%;
+    color:white;
+    font-size:3rem;
+    cursor:pointer;
+}
+
+
+.image__display{
+    height: 50%;
+    max-height: 50%;
+    max-width: 80%;
+}
+
+
+
+.gallery-image-wrapper{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    cursor:pointer;
+}
+
+.gallery-image{
+    position: absolute;
+    top: 0%;
+    left: -2%;
+    height: 125%;
+}
+
+.gallery-click-right{
+    animation-name:gallery-click-right;
+    animation-duration:300ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+
+.gallery-click-left{
+    animation-name:gallery-click-left;
+    animation-duration:300ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.fa{
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover{
+    opacity: 0.7;
+}
+
+.fa-facebook{
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter{
+    background: #55ACEE;
+    color: white;
+}
+
 .transition{
     transition: all 1000ms;
     -webkit-transform: all 1000ms;
+}
+
+.transition-opacity{
+    transition: opacity 300ms linear;
 }
