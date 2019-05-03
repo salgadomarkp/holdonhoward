@@ -31,6 +31,10 @@ p{
     color: #444;
 }
 
+ul{
+    list-style: none;
+}
+
 .tab{
     text-indent: 48px;
 }
