@@ -259,6 +259,17 @@ span{
     color: white;
 }
 
+.fa-instagram{
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 100%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    color: white;
+}
+
+.fa-youtube{
+    background: #bb0000;
+    color: white;
+}
+
 .fa-twitter{
     background: #55ACEE;
     color: white;

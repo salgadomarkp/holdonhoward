@@ -3,8 +3,9 @@ console.log("JavaScript is loaded");
 var images = [
     "images/band-pic-smaller.jpg",
     "images/chalkboard-band-name.jpg",
+    "images/band-pic-gin-mill.jpg",
     "images/relay-pic.png",
-    "images/wfmz-relay-pic.jpg"
+    "images/wfmz-relay-pic.jpg",
 ];
 
 
