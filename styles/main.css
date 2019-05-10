@@ -31,10 +31,6 @@ p{
     color: #444;
 }
 
-ul{
-    list-style: none;
-}
-
 .tab{
     text-indent: 48px;
 }
@@ -74,8 +70,8 @@ ul{
     align-items: center;
 }
 
-.nav-bar__dropdown{
-    position: relative;
+.dropdown{
+    overflow: hidden;
 }
 
 .dropdown__button{
@@ -83,30 +79,47 @@ ul{
     padding: 0 48px;
     color: white;
     min-height: 72px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
 }
 
-.dropdown__button:hover{
+.nav-bar a:hover, .dropdown:hover .dropdown__button{
     background-color: #444;
 }
 
-.dropdown__list{
-    background-color: #444;
+.dropdown__content{
     position: absolute;
-    width: 100%;
-    max-height: 320px;
-    overflow-y: hidden;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 4;
 }
 
-.dropdown__list.hidden{
+.dropdown__content a{
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover{
+    background-color: #444;
+}
+
+.dropdown__content.hidden{
     max-height: 0;
 }
 
-span{
+button{
     padding: 0px 12px;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 1.75rem;
+    border: none;
+}
+
+a{
+    padding: 0px 12px;
+    color: white;
+    text-decoration: none;
 }
 
 .content{
@@ -168,6 +181,7 @@ span{
     width: 100%;
     height: 100%;
     position:absolute;
+    left: -20%;
     z-index:7;
 }
 
@@ -209,8 +223,6 @@ span{
     max-height: 50%;
     max-width: 80%;
 }
-
-
 
 .gallery-image-wrapper{
     width: 200px;
@@ -276,8 +288,8 @@ span{
 }
 
 .transition{
-    transition: all 1000ms;
-    -webkit-transform: all 1000ms;
+    transition: all 300ms;
+    -webkit-transform: all 300ms;
 }
 
 .transition-opacity{

@@ -3,6 +3,9 @@
     <head>
         <title>Hold on Howard</title>
         <link href="styles/main.css" rel="stylesheet" type="text/css">
+        <link href="styles/main-phone.css" rel="stylesheet" type="text/css">
+        <link href="styles/main-tablet.css" rel="stylesheet" type="text/css">
+        <link href="styles/animations.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,35 +24,34 @@
             <div class="nav-bar__brand">
                 <div>Hold on Howard</div>
             </div>
-            <div class="nav-bar__tools nav-bar__dropdown">
-                <span class="dropdown__button">About Us</span>
-                    <div class="dropdown__list transition hidden">
-                        <ul>
-                            <li>The Band</li>
-                            <li>Zach Hartrum</li>
-                            <li>Matthew Hager</li>
-                            <li>Kyle Clark</li>
-                            <li>Mark Salgado</li>
-                            <li>Dimitri Pandelios</li>
-                        </ul>
-                    </div>
-                <span>Upcoming Shows</span>
-                <span class="dropdown__button">Media</span>
-                    <div class="dropdown__list transition hidden">
-                        <ul>
-                            <li>Photos</li>
-                            <li>Videos</li>
-                            <li>Audio</li>
-                        </ul>
-                    </div>
-                <span>Setlist</span>
-                <span>Contact Us</span>
+            <div class="nav-bar__tools">
+                <div class="dropdown">
+                    <button class="dropdown__button">About Us</button>
+                        <div class="dropdown__content transition hidden">
+                            <a href="#band">The Band</a>
+                            <a href="#zach">Zach Hartrum</a>
+                            <a href="#matthew">Matthew Hager</a>
+                            <a href="#kyle">Kyle Clark</a>
+                            <a href="#mark">Mark Salgado</a>
+                            <a href="#dimitri">Dimitri Pandelios</a>
+                        </div>
+                </div>
+                <a href="#shows">Upcoming Shows</a>
+                <div class="dropdown">
+                    <button class="dropdown__button">Media</button>
+                        <div class="dropdown__content transition hidden">
+                            <a href="#photos">Photos</a>
+                            <a href="#videos">Videos</a>
+                        </div>
+                </div>
+                <a href="#setlist">Setlist</a>
+                <a href="#contact">Contact Us</a>
             </div>
         </div>
 
         <div class="content">
             <h4>About Us</h4>
-            <h5>The Band</h5>
+            <h5 id="band">The Band</h5>
             <img src="images/band-pic-smaller.jpg">
             <p>
                 Hold on Howard is a Lehigh-Valley based pop punk band officially formed in 2019. It 
@@ -58,28 +60,28 @@
                 from bands such as Green Day, Nirvana, Mayday Parade, Jimmy Eat World, The Ramones,
                 and Good Charlotte.
             </p>
-            <h5>Zach Hartrum</h5>
+            <h5 id="zach">Zach Hartrum</h5>
             <img src="images/zach.jpg">
             <p>
                 Zach was born in New Jersey. He was heavily influenced by his father's love for music.
                 He joined his first band in junior high school. Zach says that was the first time he was
                 actually passionate about something besides video games.
             </p>
-            <h5>Matthew Hager</h5>
+            <h5 id="matthew">Matthew Hager</h5>
             <img src="images/matthew.jpg">
             <p>
                 A self-taught guitarist since the age of twelve, Matthew has been influenced by his
                 parents' favorite bands, ranging from heavy metal from his father (Megadeth, Pantera, etc.)
                 to punk and alternative from his mother (Green Day, Simple Plan, etc.).
             </p>
-            <h5>Kyle Clark</h5>
+            <h5 id="kyle">Kyle Clark</h5>
             <img src="images/kyle.jpg">
             <p>
                 Kyle has his roots in metal, rock, and punk. He has been influenced by his father's
                 interest in bands such as Metallica, Nirvana, and The Offspring. Kyle began by producing
                 his own electronic music before deciding to learn the guitar.
             </p>
-            <h5>Mark Salgado</h5>
+            <h5 id="mark">Mark Salgado</h5>
             <img src="images/mark.jpg">
             <p>
                 Mark was born in the Lehigh Valley. He grew up surrounded by music and fell asleep to The
@@ -87,7 +89,7 @@
                 thereafter. Mark cites Rush's Geddy Lee as one of his biggest influences. Aside from music, 
                 he takes interest in sports, aviation, and writing.
             </p>
-            <h5>Dimitri Pandelios</h5>
+            <h5 id="dimitri">Dimitri Pandelios</h5>
             <img src="images/dimitri.jpg">
             <p>
                 Dimitri was also born in the Lehigh Valley. Like the other band members, he grew up in a
@@ -96,7 +98,7 @@
                 Barker from blink-182. Aside from music, Dimitri enjoys watching movies.
             </p>
             
-            <h4>Upcoming Shows</h4>
+            <h4 id="shows">Upcoming Shows</h4>
             
             <h5>Mark's Private Graduation Party</h5>
             <p class="tab">Beethoven Waldheim - Hellertown, PA:
@@ -104,14 +106,14 @@
 
             <h4>Media</h4>
 
-            <h5>Photos</h5>
+            <h5 id="photos">Photos</h5>
             <div id="dialog" class="transition-opacity hidden">
                 <div class="dialog__scrim"></div>
                 <div class="dialog__image">
                     <img class="image__display" src="images/band-pic-smaller.jpg">
                 </div>
                 <div class="dialog__exit">
-                    
+                    X
                 </div>
                 <div class="dialog__scroll-left">
                     &lt;
@@ -121,16 +123,15 @@
                 </div>
             </div>
             <div id="gallery"></div>
-            <h5>Videos</h5>
+            <h5 id="videos">Videos</h5>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Hs1zQrfuYEc" 
                 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen></iframe>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/I1U0XCw-MAU" 
                 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen></iframe>
-            <h5>Audio</h5>
-
-            <h4>Setlist</h4>
+            
+            <h4 id="setlist">Setlist</h4>
             <p>
             Hold on Howard - Tyler's Basement *original*
             <br>
@@ -153,7 +154,7 @@
             The Ramones - Blitzkrieg Bop
             </p>
             
-            <h4>Contact Us</h4>
+            <h4 id="contact">Contact Us</h4>
             <p>
                 We can be reached by email at
                 HoldOnHoward@gmail.com. Be sure to like,

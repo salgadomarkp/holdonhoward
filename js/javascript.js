@@ -19,18 +19,18 @@ $( document ).ready(function() {
     //Clicking ANY dropdown button
     $( ".dropdown__button").click(function() {
         //If we clicked on an open dropdown
-        if($(this).siblings(".dropdown__list").hasClass("hidden") == false)
+        if($(this).siblings(".dropdown__content").hasClass("hidden"))
         {
-            //Hide it
-            $(this).siblings(".dropdown__list").addClass("hidden");
+            //Show it
+            $(this).siblings(".dropdown__content").removeClass("hidden");
         }
         //Otherwise
         else{
             //Hide all of the list items
-            $(".dropdown__list").addClass("hidden");
+            $(".dropdown__content").addClass("hidden");
     
-            //remove the hidden class from the clicked drop down
-            $(this).siblings(".dropdown__list").removeClass("hidden");
+            //Add the hidden class from the clicked drop down
+            $(this).siblings(".dropdown__content").addClass("hidden");
         }
     });
 
