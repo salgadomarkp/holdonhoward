@@ -9,7 +9,15 @@
         max-width: 90%;
     }
 
-    .nav-bar{
-        display:none;
+    .nav-bar__brand{
+        font-size: 2rem;
+    }
+
+    .dropdown__button{
+        padding: 0 8px;
+    }
+
+    .nav-bar__tools, button{
+        font-size:1rem;
     }
 }
