@@ -291,6 +291,12 @@ a{
     color: white;
 }
 
+form{
+    font-family: 'Roboto', sans-serif;
+    line-height: 2;
+    color: #444;
+}
+
 .transition{
     transition: all 300ms;
     -webkit-transform: all 300ms;
