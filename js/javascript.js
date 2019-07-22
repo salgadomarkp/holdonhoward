@@ -1,11 +1,15 @@
 console.log("JavaScript is loaded");
 
 var images = [
+    "images/band-pic-steps.jpg",
     "images/band-pic-smaller.jpg",
     "images/chalkboard-band-name.jpg",
     "images/band-pic-gin-mill.jpg",
     "images/relay-pic.png",
     "images/wfmz-relay-pic.jpg",
+    "images/band-pic-panoramic.jpg",
+    "images/hoh-sparklers.jpg",
+    "images/wristband-dirt.jpg",
 ];
 
 

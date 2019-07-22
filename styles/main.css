@@ -83,7 +83,8 @@ p{
 }
 
 .nav-bar a:hover, .dropdown:hover .dropdown__button{
-    background-color: #444;
+    /*background-color: #444;*/
+    background-color: red;
 }
 
 .dropdown__content{
@@ -234,6 +235,7 @@ a{
     position: relative;
     overflow: hidden;
     cursor:pointer;
+    padding: 64px;
 }
 
 .gallery-image{
@@ -261,9 +263,10 @@ a{
 .fa{
     padding: 20px;
     font-size: 30px;
-    width: 50px;
+    width: 20px;
     text-align: center;
     text-decoration: none;
+    border-radius: 100%;
 }
 
 .fa:hover{
@@ -276,7 +279,6 @@ a{
 }
 
 .fa-instagram{
-    background: #d6249f;
     background: radial-gradient(circle at 30% 100%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
     color: white;
 }
